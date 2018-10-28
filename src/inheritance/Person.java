@@ -1,6 +1,6 @@
 package inheritance;
 
-public class Person {
+public abstract class Person implements Speakable {
 
     private String name;
     private String surname;
@@ -26,8 +26,12 @@ public class Person {
         this.surname = surname;
     }
 
+    public abstract String saySomething(String say);
+
     @Override
     public String toString(){
         return name + " " + surname;
     }
+
+
 }

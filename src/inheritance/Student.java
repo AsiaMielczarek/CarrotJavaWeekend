@@ -18,7 +18,23 @@ public class Student extends Person {
     }
 
     @Override
+    public String saySomething(String say) {
+        return " Student says " + say;
+    }
+
+    @Override
     public String toString(){
         return super.toString() + " " + studentId;
+    }
+
+
+    @Override
+    public void speak(String toSpeak) {
+
+    }
+
+    @Override
+    public String speaker(String speaker) {
+        return "Student " + speaker;
     }
 }
